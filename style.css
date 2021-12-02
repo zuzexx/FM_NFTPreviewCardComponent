@@ -11,6 +11,10 @@ body{
 h1{
     color:white;
 }
+h1:hover{
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}
 .panel{
     color:hsl(215, 51%, 70%);
     font-size:18px;
@@ -26,4 +30,21 @@ h1{
 }
 span{
     color: white;
+}
+span:hover{
+    cursor:pointer;
+    color:hsl(178, 100%, 50%);
+}
+img{
+    border-radius: 20px;
+    height:300px;
+}
+img:hover{
+    cursor: pointer;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    height: auto;
+    width: 400px;
 }
