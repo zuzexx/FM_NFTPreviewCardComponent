@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color:hsl(217, 54%, 11%) ;
+}
+h1{
+    color:white;
+}
+.panel{
+    color:hsl(215, 51%, 70%);
+    font-size:18px;
+}
+.coin{
+    color:hsl(178, 100%, 50%);
+}
+.days{
+    color: hsl(215, 51%, 70%);
+}
+.creation{
+    color: hsl(215, 51%, 70%);
+}
+span{
+    color: white;
+}
