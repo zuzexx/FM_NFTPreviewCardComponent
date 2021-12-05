@@ -22,6 +22,12 @@ body{
     box-shadow: 20px 20px 20px hsl(217, 54%, 11%);
     
 }
+.container{
+    display:flex;
+    flex-direction: row;
+    width: 400px;
+    margin-top: 30px;
+}
 h1{
     color:white;
 }
@@ -33,11 +39,21 @@ h1:hover{
     color:hsl(215, 51%, 70%);
     font-size:18px;
 }
+.ethereum{
+    height: 20px;
+    margin-left:65px;
+}
+.clock{
+    height:20px;
+    margin-left: 100px;
+}
 .coin{
     color:hsl(178, 100%, 50%);
+    margin-left:10px;
 }
 .days{
     color: hsl(215, 51%, 70%);
+    margin-left:10px;
 }
 hr{
    border-color:hsl(215, 51%, 70%); 
