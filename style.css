@@ -91,15 +91,29 @@ span:hover{
     cursor:pointer;
     color:hsl(178, 100%, 50%);
 }
+.img-top{
+    position:absolute;
+    margin-top: -110px;
+    height: 60px;
+    display: none;
+    
+}
 img{
     border-radius: 10px;
     height:350px;  
 }
 .image{
     margin-top: 20px;
+    display: inline-block;
 }
-.image :hover{
+.image:hover{
     cursor: pointer;
+    z-index: 5;
+}
+.image:hover .img-top{
+    z-index: 6;
+    display: inline-flex;
+    
 }
 .avatar{
     height:40px;
