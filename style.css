@@ -35,7 +35,7 @@ body{
     display:flex;
     flex-direction: row;
     width: 400px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     
 }
@@ -44,6 +44,7 @@ h1{
     font-weight: 600;
     font-size: 25px;
     margin-left: -130px;
+    margin-top: 50px;
 }
 h1:hover{
     cursor: pointer;
@@ -58,10 +59,12 @@ h1:hover{
 .ethereum{
     height: 20px;
     margin-left:30px;
+    margin-top: 1px;
 }
 .clock{
     height:20px;
     margin-left: 100px;
+    margin-top: 1px;
 }
 .coin{
     color:hsl(178, 100%, 50%);
@@ -82,7 +85,7 @@ hr{
 .creation{
     color: hsl(215, 51%, 70%);
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 span{
     color: white;
@@ -93,21 +96,26 @@ span:hover{
 }
 .img-top{
     position:absolute;
-    margin-top: 170px;
-    margin-left: 150px;
+    margin-top: 160px;
+    margin-left: 140px;
     height: 50px;
     display: none;  
 }
 img{
     border-radius: 10px;
-    height:350px;  
+    height:330px;  
+    margin-top: -20px; 
 }
-
+.image{
+    border-radius: 10px;
+    height:330px; 
+    margin-top: 10px;  
+}
 .img{
     margin-top: 20px;
     display: inline-block;
 }
-.image:hover{
+.img:hover .image{
     background-color:hsl(178, 100%, 50%);
     cursor: pointer;
     }
@@ -115,11 +123,12 @@ img{
     display: block;
 }
 .image:hover .img{
-    display: block;
+    opacity:0.5;
 }
 .avatar{
     height:40px;
     border:3px, solid, white;
     border-radius: 100%;
     margin-left: 40px;
+    
 }
