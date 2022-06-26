@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-body{
+@import "./variables";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin body(){
     display: flex;
     flex-direction: column;
     margin:0;
@@ -7,51 +12,68 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background-color:hsl(217, 54%, 11%) ;
-    font-family: "Outfit", sans-serif;
+    background-color:$very-dark-blue-bg;
+    font-family: $font-family;
 }
-.card{
+
+@mixin card(){
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height:auto;
     overflow:hidden;
-    background-color: hsl(216, 50%, 16%);
+    background-color: $very-dark-blue-card;
     border-radius: 20px;
     height: 600px;
     width: 400px;
     box-shadow: -10px -10px 5px 10px hsl(217, 54%, 11%), 10px 5px 10px 30px hsl(217, 54%, 11%),30px 30px 50px 50px hsl(216, 50%, 16%);
     
-    
 }
-.container{
+
+@mixin container(){
     display:flex;
     flex-direction: row;
     width: 400px;
     margin-top: 30px;
 }
-.container2{
+
+@mixin container2(){
     display:flex;
     flex-direction: row;
     width: 400px;
     margin-top: 20px;
     margin-bottom: 10px;
-    
 }
+
+body{
+    @include body();
+}
+.card{
+    @include card();
+}
+.container{
+    @include container();
+}
+.container2{
+    @include container2();
+}
+
 h1{
-    color:white;
+    color:$white;
     font-weight: 600;
     font-size: 25px;
     margin-left: -130px;
     margin-top: 50px;
+
+    &:hover{
+        cursor: pointer;
+        color:$cyan;
+    }
 }
-h1:hover{
-    cursor: pointer;
-    color:hsl(178, 100%, 50%);
-}
+
 .panel{
-    color:hsl(215, 51%, 70%);
+    color:$soft-blue;
     font-size:18px;
     font-weight: 300;
     margin-left: -50px;
@@ -67,33 +89,35 @@ h1:hover{
     margin-top: 1px;
 }
 .coin{
-    color:hsl(178, 100%, 50%);
+    color:$cyan;
     margin-left:10px;
     font-weight: 400;
 }
 .days{
-    color: hsl(215, 51%, 70%);
+    color: $soft-blue;
     margin-left:10px;
 }
 hr{
-   border-color:hsl(215, 51%, 70%); 
+   border-color:$soft-blue; 
    width:90%;
    margin-left:auto;
    margin-right:auto;
    
 }
 .creation{
-    color: hsl(215, 51%, 70%);
+    color: $soft-blue;
     margin-left: 20px;
     margin-top: -5px;
 }
 span{
-    color: white;
+    color: $white;
+
+    &:hover{
+        cursor: pointer;
+        color: $cyan;
+    }
 }
-span:hover{
-    cursor:pointer;
-    color:hsl(178, 100%, 50%);
-}
+
 .img-top{
     position:absolute;
     margin-top: 160px;
@@ -116,7 +140,7 @@ img{
     display: inline-block;
 }
 .img:hover .image{
-    background-color:hsl(178, 100%, 50%);
+    background-color:$cyan;
     cursor: pointer;
     }
 .image:hover .img-top{
@@ -124,6 +148,7 @@ img{
 }
 .image:hover .img{
     opacity:0.5;
+    background-color:$cyan;
 }
 .avatar{
     height:40px;

@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 20px;
+  height: 600px;
+  width: 400px;
+  box-shadow: -10px -10px 5px 10px hsl(217deg, 54%, 11%), 10px 5px 10px 30px hsl(217deg, 54%, 11%), 30px 30px 50px 50px hsl(216deg, 50%, 16%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: -130px;
+  margin-top: 50px;
+}
+h1:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+.panel {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: -50px;
+}
+
+.ethereum {
+  height: 20px;
+  margin-left: 30px;
+  margin-top: 1px;
+}
+
+.clock {
+  height: 20px;
+  margin-left: 100px;
+  margin-top: 1px;
+}
+
+.coin {
+  color: hsl(178deg, 100%, 50%);
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.days {
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 10px;
+}
+
+hr {
+  border-color: hsl(215deg, 51%, 70%);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creation {
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+span {
+  color: hsl(0deg, 0%, 100%);
+}
+span:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+.img-top {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 140px;
+  height: 50px;
+  display: none;
+}
+
+img {
+  border-radius: 10px;
+  height: 330px;
+  margin-top: -20px;
+}
+
+.image {
+  border-radius: 10px;
+  height: 330px;
+  margin-top: 10px;
+}
+
+.img {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.img:hover .image {
+  background-color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.image:hover .img-top {
+  display: block;
+}
+
+.image:hover .img {
+  opacity: 0.5;
+  background-color: hsl(178deg, 100%, 50%);
+}
+
+.avatar {
+  height: 40px;
+  border: 3px, solid, white;
+  border-radius: 100%;
+  margin-left: 40px;
+}/*# sourceMappingURL=main.css.map */
